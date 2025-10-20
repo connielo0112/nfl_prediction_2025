@@ -3,7 +3,6 @@
 This project predicts the outcomes of upcoming NFL games using recent team performance statistics.  
 It automatically fetches data from ESPN’s public NFL API, trains a machine learning model, and outputs predictions with confidence levels.
 
----
 
 ## Overview
 
@@ -17,7 +16,7 @@ Predict which team is more liely to win an upcoming NFL game based on past team 
 4. **Prediction** — Applies the trained model to upcoming games to predict winners and confidence levels.  
 5. **Output** — Saves a `predictions_latest.csv` file with the results.
 
----
+
 
 ## Start
 ### 1. Clone the repository
@@ -42,7 +41,7 @@ pip install -r requirements.txt
 python nfl_prediction.py
 ```
 
----
+
 
 ## Model Choice: Gradient Boosting Classifier
 - **Accurate for tabular data** — Works well on small to medium-sized datasets with mixed numeric features.  
@@ -50,7 +49,7 @@ python nfl_prediction.py
 - **Able to capture nonlinear patterns** — Important because NFL outcomes depend on complex, non-linear team interactions.  
 - **Interpretable** — We can examine feature importance (e.g., which stats most affect predictions).
 
----
+
 
 ## Features Used
 
@@ -70,7 +69,7 @@ Each game is represented by **9 numeric features** — describing the relative s
 
 These features capture both **offensive** and **defensive** strengths, and provide a balanced comparison between the two teams.
 
----
+
 
 ## Model Output Example
 ```bash
@@ -89,7 +88,7 @@ Seattle Seahawks vs Houston Texans → Houston Texans (99.1%)
 - The **predicted winner** is the team expected to win.  
 - The **confidence (%)** represents how certain the model is in that prediction.  
 
----
+
 
 ## Future Improvements
 - Incorporate **player-level** stats (e.g., QB rating, rushing yards).  
@@ -97,7 +96,7 @@ Seattle Seahawks vs Houston Texans → Houston Texans (99.1%)
 - Explore **XGBoost or LightGBM** for faster and possibly more accurate results.  
 - Add **feature importance visualization**.
 
----
+
 
 **Author:** Connie Lo  
 **Date:** October 2025
